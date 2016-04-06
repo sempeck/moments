@@ -13,9 +13,7 @@
 /********************** General **************************/
 
 body {
-  /*padding-top: 70px;*/
   margin: 0;
-
 }
 
 section {
@@ -37,6 +35,43 @@ span {
   padding: 0px 5px;
 }
 
+h1,h2,p {
+  color: #000;
+}
+
+h1 {
+  font-family:"proxima-nova", sans-serif;
+  font-weight:900;
+  font-size: 56px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family:"proxima-nova", sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+h3 {
+  font-family: Lucznik1303Plus;
+  color: #a21510;
+  font-size: 16px;
+}
+
+.initial:first-letter {
+font: 35px sans-serif;
+color: #a21510;
+float: left;
+padding-right: 5px;
+}
+
+p {
+  font-family:"proxima-nova", sans-serif;
+}
+
 /********************** Nav ******************************/
 
  .navbar-brand {
@@ -51,21 +86,15 @@ span {
 /******************* Section 1 ****************************/
 
 .section-01 {
-/*  width: 200px;
-  overflow: hidden;
-  display: block;
-  height: 500px;*/
+
 }
 
 #video-intro {
   position: fixed;
-  /*position: absolute;*/
   top: 50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
-/*  max-width: 100%;
-  max-height: 100%;*/
   width: auto;
   height: auto;
   z-index: -100;
@@ -99,7 +128,6 @@ span {
   
 .intro h3 {
   color: #fff; 
-  /*  font-family: "lucznik1303plus", monospace;*/
   font-family:"proxima-nova", sans-serif;
   font-weight:400;
   font-size: 18px;
@@ -114,11 +142,16 @@ span {
   -ms-transform: rotate(270deg); /* IE 9 */
   -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
   transform: rotate(270deg);
-  /*position:absolute;*/
   margin-top: 0px;
   display: block;
   position: absolute;
   bottom: 0vh;
+}
+
+/******************* Section 2 ****************************/
+
+.section-02 {
+  background-color: #e7e7e7;
 }
 
 /******************* Section 3 ****************************/
@@ -137,3 +170,72 @@ span {
   left: 80vw;
 
 }
+
+/******************* Section 4 ****************************/
+
+.section-04 {
+  background-image: url("../img/australia/au_02.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/******************* Section 5 ****************************/
+
+.section-05 {
+  background-image: url("../img/australia/au_03.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/******************* Section 6 ****************************/
+
+.section-06 {
+  background-color: #e7e7e7;
+}
+
+/******************* Section 7 ****************************/
+
+.section-07 {
+  background-image: url("../img/australia/au_04.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/******************* Section 8 ****************************/
+
+.section-08 {
+  background-color: #e7e7e7;
+}
+
+/******************* Section 9 ****************************/
+
+.section-09 {
+  background-image: url("../img/australia/au_05.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/******************* Section 10 ***************************/
+
+.section-10 {
+  background-color: #e7e7e7;
+}
+
+/******************* Section 9 ****************************/
+
+.section-11 {
+  background-image: url("../img/australia/au_06.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
