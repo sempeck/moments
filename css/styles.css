@@ -15,8 +15,12 @@
 body {
   margin: 0;
   /*padding-bottom: 70px;*/
+  background-color: #fff;
 }
 
+article {
+  overflow: hidden;
+}
 section {
   min-height: 100vh;
   min-width: 100vw;
@@ -48,6 +52,7 @@ h1 {
   font-family:"proxima-nova", sans-serif;
   font-weight:900;
   font-size: 56px;
+  line-height: 0.9;
   text-transform: uppercase;
 }
 
@@ -57,7 +62,7 @@ h2 {
   font-size: 18px;
   text-transform: uppercase;
   padding-bottom: 20px;
-  margin-top: 0px;
+  /*margin-top: 0px;*/
 }
 
 h3 {
@@ -67,14 +72,18 @@ h3 {
 }
 
 .initial:first-letter {
-font: 35px sans-serif;
+font: 41px sans-serif;
 color: #a21510;
+font-weight:900;
 float: left;
 padding-right: 5px;
+margin-bottom: -10px;
 }
 
 p {
   font-family:"proxima-nova", sans-serif;
+  font-size: 16px;
+  color: #333333;
 }
 
 /********************** Nav ******************************/
@@ -178,7 +187,7 @@ p {
 /******************* Section 2 ****************************/
 
 .section-02 {
-  background-color: #e7e7e7;
+  background-color: #fff;
 }
 
 /******************* Section 3 ****************************/
@@ -214,7 +223,7 @@ p {
 /******************* Section 6 ****************************/
 
 .section-06 {
-  background-color: #e7e7e7;
+  background-color: #fff;
 }
 
 /******************* Section 7 ****************************/
@@ -230,7 +239,7 @@ p {
 /******************* Section 8 ****************************/
 
 .section-08 {
-  background-color: #e7e7e7;
+  background-color: #fff;
 }
 
 /******************* Section 9 ****************************/
@@ -246,7 +255,7 @@ p {
 /******************* Section 10 ***************************/
 
 .section-10 {
-  background-color: #e7e7e7;
+  background-color: #fff;
 }
 
 /******************* Section 9 ****************************/
