@@ -27,7 +27,9 @@ section {
   display: block;
   margin: 0;
 }
-
+.wrapper {
+padding-right: 15px;
+}
 /********************** Text *****************************/
 .photo-desc {
   font-family:"proxima-nova", sans-serif;
@@ -190,6 +192,60 @@ p {
   background-color: #fff;
 }
 
+.section-02 img {
+  width: 80%;
+}
+
+.icon {
+  min-width: 10vh;
+  opacity: 0.6;
+  
+  /* Center the content */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  
+  transition: all .25s cubic-bezier(.59, -0.26, .33, 1.42);
+}
+
+.icon:hover {
+  opacity: 1;
+  /*transform: scale(1.4);
+  filter: blur(15px);*/
+  cursor: pointer;
+}
+
+.play {
+  opacity: 1;
+}
+
+.pause {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.stroke-bg {
+  stroke: #4c4c4c;
+}
+
+.stroke {
+  stroke-dasharray: 145;
+  stroke-dashoffset: 145;
+  animation: dash 11s linear paused;
+ }
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 145;
+  }
+}
 /******************* Section 3 ****************************/
 
 .section-03 {
@@ -224,6 +280,18 @@ p {
 
 .section-06 {
   background-color: #fff;
+  padding-bottom: 30px;
+}
+
+.section-06 img {
+  width: 100%;
+  margin-top: -33.1%;
+}
+
+#video-roadtrains {
+  position: relative;
+  width: 40.155%;
+  float: right;
 }
 
 /******************* Section 7 ****************************/
