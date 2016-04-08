@@ -20,7 +20,6 @@ clickDiv.addEventListener('click', function() {
     audioElement.pause();
   }
 })
-
 $('.stroke').bind('oanimationend animationend webkitAnimationEnd', function() { 
    pause.classList.add('hidden');
     play.classList.remove('hidden');
@@ -48,8 +47,40 @@ $(window).scroll(function() {
    }
 });
 
+//// scroll animations ///////////////////////////////////
+var $animation_elements = $('.animation-element');
+var $window = $(window);
 
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+ 
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+ 
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position-element_height)) {  // -element_height dodane, by element pojawiał się, dopiero gdy cały może być widoczny
+      $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
+  });
+}
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
 
+//// title fade out ///////////////////////////////////
+$(window).scroll(function() { 
+if ($(this).scrollTop()> 50) { 
+$('.scrolltop').fadeOut("slow"); 
+} else { 
+$('.scrolltop').fadeIn("slow");
+} 
+});
 
 
 
