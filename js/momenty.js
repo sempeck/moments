@@ -81,6 +81,3 @@ $('.scrolltop').fadeOut("slow");
 $('.scrolltop').fadeIn("slow");
 } 
 });
-
-
-
