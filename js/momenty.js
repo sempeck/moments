@@ -63,7 +63,8 @@ function check_if_in_view() {
     var element_bottom_position = (element_top_position + element_height);
  
     if ((element_bottom_position >= window_top_position) &&
-        (element_top_position <= window_bottom_position-element_height)) {  // -element_height dodane, by element pojawiał się, dopiero gdy cały może być widoczny
+        // '-element_height' added, so element fades in when it can be seen completely
+        (element_top_position <= window_bottom_position-element_height)) {  
       $element.addClass('in-view');
     } else {
       $element.removeClass('in-view');
@@ -73,11 +74,41 @@ function check_if_in_view() {
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
-//// title fade out ///////////////////////////////////
+//////// title fade out ///////////////////////////////////
 $(window).scroll(function() { 
 if ($(this).scrollTop()> 50) { 
 $('.scrolltop').fadeOut("slow"); 
 } else { 
 $('.scrolltop').fadeIn("slow");
 } 
+});
+
+///////////// MENU ///////////////////////////////////////
+$(document).ready(function () {
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.fadeOut("ease");
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.fadeIn("ease");
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
 });
