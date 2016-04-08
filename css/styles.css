@@ -105,13 +105,19 @@ p {
   font-family: Lucznik1303Plus;
 }
 
-.nav a {
+nav a {
   font-family:"proxima-nova", sans-serif;
   font-weight:400;
 }
 
+nav {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
 /*zwinięte menu*/
-.navbar-header {
+/*.navbar-header {
     float: none;
 }
 .navbar-toggle {
@@ -126,7 +132,6 @@ p {
 }
 .navbar-nav {
     float: none!important;
-    /*margin: 7.5px -15px;*/
 }
 .navbar-nav>li {
     float: none;
@@ -134,7 +139,7 @@ p {
 .navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
-}
+}*/
 
 /******************* Animation ****************************/
 .animation-element {
@@ -189,7 +194,8 @@ p {
 /******************* Section 1 ****************************/
 
 .section-01 {
-  padding-top: 5%;    
+  padding-top: 2%;
+  margin-bottom: -70px;   
 }
 
 #video-intro {
@@ -230,6 +236,7 @@ p {
   font-family:"proxima-nova", sans-serif;
   font-weight:400;
   font-size: 18px;
+  margin-top: -22px;
   font-style:normal;
 }
   
