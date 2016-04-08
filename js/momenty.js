@@ -27,3 +27,29 @@ $('.stroke').bind('oanimationend animationend webkitAnimationEnd', function() {
     animationDiv.style.webkitAnimationPlayState = "paused";
     animationDiv.classList.remove('stroke');
 });
+
+//// video play in view //////////////////////////////////
+var video = $('#video-kangaroo');
+var videoElement = video.get(0);
+var stop = false;
+$(window).scroll(function() {
+   var hT = video.offset().top,
+       hH = video.outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop(); 
+   if ((wS > (hT+hH-wH)) && (wS < (hT+hH))){
+      if (!stop) {
+      video[0].play();
+      stop = true;
+       }
+   }
+   else {
+    video[0].pause();
+   }
+});
+
+
+
+
+
+

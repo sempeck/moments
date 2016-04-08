@@ -259,11 +259,7 @@ p {
 /******************* Section 4 ****************************/
 
 .section-04 {
-  background-image: url("../img/australia/au_02.jpg");
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #fff;
 }
 
 /******************* Section 5 ****************************/
@@ -308,6 +304,10 @@ p {
 
 .section-08 {
   background-color: #fff;
+}
+
+#video-kangaroo {
+  width: 100%;
 }
 
 /******************* Section 9 ****************************/
